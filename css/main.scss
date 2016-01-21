@@ -1,5 +1,6 @@
 html, body {
 	margin: 0;
+	padding: 0;
 	height: 100%;
 }
 
@@ -8,6 +9,9 @@ html, body {
     src: url("../GothamBold.otf");
 }
 
+/*******************************************************
+					LANDING PAGE
+*******************************************************/
 .home-left {
 	float: left;
 }
@@ -31,9 +35,9 @@ html, body {
 	padding-right: 20px;
 }
 
-.test {
-	clear: both;
-}
+/*******************************************************
+			    PORTFOLIO / PHOTO GRID
+*******************************************************/
 
 hr {
 	width: 100%;
@@ -43,36 +47,34 @@ hr {
 	margin: 0;
 }
 
-.portfolio-header {
+.section-header {
 	font-family: Lato;
 	font-size: 25px;
 	padding: 20px 0 20px 175px;
 
 }
 
-body {
-   margin: 0;
-   padding: 0;
-   background: #EEE;
-   font: 10px/13px 'Lucida Sans',sans-serif;
-}
 .wrap {
    overflow: hidden;
    margin-top: -2px;
 }
+
 .box {
    float: left;
    position: relative;
    width: 33.3%;
    padding-bottom: 33.3%;
 }
+
 .boxInner {
    position: absolute;
    width: 100%;
 }
+
 .boxInner img {
    width: 100%;
 }
+
 .boxInner .titleBox {
    position: absolute;
    bottom: 0;
@@ -89,9 +91,11 @@ body {
    -o-transition: all 0.3s ease-out;
    transition: all 0.3s ease-out;
 }
+
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
    margin-bottom: 0;
 }
+
 @media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
    .box {
@@ -99,6 +103,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       padding-bottom: 100%;
    }
 }
+
 @media only screen and (max-width : 650px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
    .box {
@@ -106,6 +111,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       padding-bottom: 50%;
    }
 }
+
 @media only screen and (max-width : 1050px) and (min-width : 651px) {
    /* Small desktop / ipad view: 3 tiles */
    .box {
@@ -113,6 +119,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
       padding-bottom: 33.3%;
    }
 }
+
 @media only screen and (max-width : 1290px) and (min-width : 1051px) {
    /* Medium desktop: 4 tiles */
    .box {
@@ -121,6 +128,9 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
    }
 }
 
+/*******************************************************
+					ARTIST BIO
+*******************************************************/
 .eamon {
 	margin-top: 50px;
 	margin-left: 175px;
@@ -147,11 +157,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 .bio {
-	margin: 40px 200px 0 600px;
+	margin: 40px 150px 0 600px;
 	font-family: Lato;
 	font-size: 18px;
 }
 
+/*******************************************************
+					CONTACT
+*******************************************************/
 #logo {
 	padding-left: 175px;
 	padding-top: 40px;
@@ -179,12 +192,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	width: 100%;
 	background-color: black;
 	margin-top: 40px;
-	color: white;
 	text-align: center;
 	font-family: Lato;
 	vertical-align: middle;
 	padding: 20px 0;
+	font-size: 16px;
 }
 
-
-
+.footer a {
+	color: white;
+	text-decoration: none;
+}
