@@ -1,0 +1,154 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../GothamBold.otf");
+}
+
+.home-left {
+	float: left;
+}
+
+.title {
+	font-size: 50px;
+	font-family: Lato;
+	margin: 275px 0 0 175px;
+}
+
+.bird img {
+	float: right;
+	margin-top: 150px;
+}
+
+.dot {
+	margin: 15px 0 0 185px;
+}
+
+.dot img {
+	padding-right: 20px;
+}
+
+.test {
+	clear: both;
+}
+
+hr {
+	width: 100%;
+	height: 3px;
+	background-color: black;
+	padding: 0;
+	margin: 0;
+}
+
+.portfolio-header {
+	font-family: Lato;
+	font-size: 25px;
+	padding: 20px 0 20px 175px;
+
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background: #EEE;
+   font: 10px/13px 'Lucida Sans',sans-serif;
+}
+.wrap {
+   overflow: hidden;
+   margin-top: -2px;
+}
+.box {
+   float: left;
+   position: relative;
+   width: 33.3%;
+   padding-bottom: 33.3%;
+}
+.boxInner {
+   position: absolute;
+   width: 100%;
+}
+.boxInner img {
+   width: 100%;
+}
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -50px;
+   background: #000;
+   background: rgba(0, 0, 0, 0.5);
+   color: #FFF;
+
+   text-align: center;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;
+}
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 25%;
+   }
+}
+
+.eamon {
+	margin-top: 50px;
+	margin-left: 175px;
+	display: inline-block;
+	float: left;
+	padding-bottom: 50px;
+}
+
+.fname {
+	position: absolute;
+	color: white;
+	font-family: GothamBold;
+	font-size: 40px;
+	padding-top: 60px;
+	padding-left: 380px;
+	text-shadow: 3px 3px 15px #000000;
+}
+
+.lname {
+	color: black;
+	font-family: GothamBold;
+	font-size: 40px;
+	padding-top: 60px;
+}
+
+.bio {
+	margin: 40px 200px 0 600px;
+	font-family: Lato;
+	font-size: 18px;
+}
+
