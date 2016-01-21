@@ -152,3 +152,39 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	font-size: 18px;
 }
 
+#logo {
+	padding-left: 175px;
+	padding-top: 40px;
+}
+
+.email {
+	display: inline-block;
+	padding-left: 30px;
+	font-family: Lato;
+	font-size: 17px;
+	vertical-align: middle;
+	margin-top: -20px;
+}
+
+.phone {
+	display: inline-block;
+	padding-left: 30px;
+	font-family: Lato;
+	font-size: 17px;
+	vertical-align: middle;
+	margin-top: -20px;
+}
+
+.footer {
+	width: 100%;
+	background-color: black;
+	margin-top: 40px;
+	color: white;
+	text-align: center;
+	font-family: Lato;
+	vertical-align: middle;
+	padding: 20px 0;
+}
+
+
+
