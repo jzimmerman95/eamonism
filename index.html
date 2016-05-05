@@ -6,8 +6,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/main.scss">
 	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/skeleton.css">
-	<script type="text/javascript" src="main.js"></script>
+<!-- 	<link rel="stylesheet" href="css/skeleton.css"> -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
 	<!-- LANDING PAGE -->
@@ -15,60 +17,69 @@
 		<div class="title">EAMONISM</div>
 		<div class="dot"><img src="images/circle.png" /><img src="images/circle.png" /><img src="images/circle.png" /></div>
 	</div>
-	<div class="bird"><img src="images/bwbird.png" id="bird" onmouseover="colorBird()" onmouseout="grayscaleBird()"/></div>
+	<div id="cf3">
+	  <img class="bottom" src="images/colorbird.png" />
+	  <img class="top" id="bird" src="images/bwbird.png" />
+	</div>
+
 
 	<!-- PORTFOLIO -->
 	<hr>
 	<div class="section-header">PORTFOLIO</div>
 	<hr>
-
-	<div class="wrap">
-		<div class="box">
+	<div class="wrap" id="wrap">
+		<div class="box" >
 	    	<div class="boxInner">
-	      		<img src="images/port1.jpg" />
+	      		<img id="0" onclick='startLightBox(event)' src="images/port1.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="images/port2.jpg" />
+	      		<img id="1" src="images/port2.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="images/port3.jpg" />
+	      		<img id="2" src="images/port3.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="images/port4.jpg" />
+	      		<img id="3" src="images/port4.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="images/port5.jpg" />
+	      		<img id="4" src="images/port5.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="images/port6.jpg" />
+	      		<img id="5" src="images/port6.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="images/port7.jpg" />
+	      		<img id="6" src="images/port7.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="images/port8.jpg" />
+	      		<img id="7" src="images/port8.jpg" />
 	    	</div>
 	  	</div>
-	  	<div class="box">
+	  	<div class="box" onclick='startLightBox(event)'>
 	    	<div class="boxInner">
-	      		<img src="images/port9.jpg" />
+	      		<img id="8" src="images/port9.jpg" />
 	    	</div>
 	  	</div>
 	</div>
+
+      <div id="myModal" class="modal">
+		  <span class="close">×</span>
+		  <img class="modal-content" id="img">
+		  <div id="caption"></div>
+	  </div>
 	<!-- /#wrap -->
 
 	<!-- ARTIST BIO -->

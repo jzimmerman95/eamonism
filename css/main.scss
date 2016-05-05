@@ -22,9 +22,100 @@ html, body {
 	margin: 275px 0 0 175px;
 }
 
-.bird img {
-	float: right;
-	margin-top: 150px;
+@-webkit-keyframes cf3FadeInOut {
+	0% {
+    	opacity:1;
+   	}
+    25% {
+    	opacity:1;
+  	}
+  	75% {
+    	opacity:0;
+  	}
+  	100% {
+   		opacity:0;
+ 	}
+}
+
+@-moz-keyframes cf3FadeInOut {
+	0% {
+   		opacity:1;
+ 	}
+ 	25% {
+  		opacity:1;
+	}
+	75% {
+  		opacity:0;
+	}
+	100% {
+ 		opacity:0;
+	}
+}
+
+@-o-keyframes cf3FadeInOut {
+	0% {
+   		opacity:1;
+ 	}
+ 	25% {
+  		opacity:1;
+	}
+	75% {
+  		opacity:0;
+	}
+	100% {
+ 		opacity:0;
+	}
+}
+
+@keyframes cf3FadeInOut {
+ 	0% {
+   		opacity:1;
+ 	}
+ 	25% {
+  		opacity:1;
+	}
+	75% {
+  		opacity:0;
+	}
+	100% {
+ 		opacity:0;
+	}
+}
+
+#cf3 {
+  position:relative;
+  padding-top: 150px;
+  margin-bottom: 600px;
+}
+#cf3 img {
+  position: absolute;
+  right: 0;
+}
+
+#cf3 img.top {
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name: cf3FadeInOut;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-duration: 2s;
+  -moz-animation-direction: alternate;
+
+  -o-animation-name: cf3FadeInOut;
+  -o-animation-timing-function: ease-in;
+  -o-animation-iteration-count: 1;
+  -o-animation-duration: 2s;
+  -o-animation-direction: alternate;
+
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-direction: alternate;
 }
 
 .dot {
@@ -228,15 +319,21 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 		padding-bottom: 40px;
 	}
 
-	.bird img {
-		width: 150px;
+	#cf3 {
+	  position:relative;
+	  padding-top: 150px;
+	  margin-bottom: 250px;
+	}
+
+	#cf3 img {
+		width: 250px;
 		padding-bottom: 100px;
 	}
 
 	.title {
 		font-size: 25px;
 		font-family: Lato;
-		margin: 150px 0 0 30px;
+		margin: 50px 0 0 30px;
 	}
 
 	.dot {
@@ -293,14 +390,20 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 		padding-bottom: 40px;
 	}
 
-	.bird img {
-		width: 200px;
+	#cf3 {
+	  position:relative;
+	  padding-top: 150px;
+	  margin-bottom: 250px;
+	}
+
+	#cf3 img {
+		width: 250px;
 	}
 
 	.title {
 		font-size: 25px;
 		font-family: Lato;
-		margin: 150px 0 0 30px;
+		margin: 50px 0 0 30px;
 	}
 
 	.dot {
@@ -357,7 +460,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 		padding-bottom: 40px;
 	}
 
-	.bird img {
+	#cf3 {
+	  position:relative;
+	  padding-top: 150px;
+	  margin-bottom: 300px;
+	}
+
+	#cf3 img {
 		width: 300px;
 	}
 
@@ -421,7 +530,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 		padding-bottom: 40px;
 	}
 
-	.bird img {
+	#cf3 {
+	  position:relative;
+	  padding-top: 150px;
+	  margin-bottom: 400px;
+	}
+
+	#cf3 img {
 		width: 400px;
 	}
 
@@ -478,7 +593,13 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 		padding-top: 60px;
 	}
 
-	.bird img {
+	#cf3 {
+	  position:relative;
+	  padding-top: 150px;
+	  margin-bottom: 500px;
+	}
+
+	#cf3 img {
 		width: 450px;
 	}
 
@@ -512,10 +633,10 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 @media (min-width: 1200px) {
-	.bird img {
+	#cf3 img {
 		width: 600px;
 		float: right;
-		margin-top: 150px;
+		// margin-top: 150px;
 	}
 
 	.home-left {
@@ -558,4 +679,93 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 		font-size: 40px;
 		padding-top: 60px;
 	}
+}
+
+/*******************************************************
+					MODAL
+*******************************************************/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
