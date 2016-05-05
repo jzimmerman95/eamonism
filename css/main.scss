@@ -633,10 +633,16 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 @media (min-width: 1200px) {
+	#cf3 {
+	  position:relative;
+	  padding-top: 150px;
+	  margin-bottom: 600px;
+	}
+
 	#cf3 img {
-		width: 600px;
-		float: right;
-		// margin-top: 150px;
+	  position: absolute;
+	  right: 0;
+	  width: 600px;
 	}
 
 	.home-left {
